@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<style>
+    /* #body{
+        height: 800px;
+        width: 100%;
+        
+        padding: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+        } */
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        background: #002147;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 40px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+
+    .search input {
+        padding: 6px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .search button {
+        padding: 6px 10px;
+        border: none;
+        background: orange;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #parent {
+        height: 800px;
+        width: 100%;
+        background-image: url(https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg);
+
+    }
+
+    #back {
+        height: 70px;
+        width: 100%;
+        background-color: black;
+
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #div1 {
+        height: 60px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+
+
+    }
+
+    #div1>button {
+        height: 30px;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        box-shadow: inset;
+        border-width: 30px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        
+
+    }
+
+    #div1>button:hover {
+        background-color: rgb(10, 10, 73);
+        transform: scale(1.3s);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+
+    }
+    #parent2{
+
+        height: 1950px;
+        background-color: antiquewhite;
+    }
+    #div2{
+        
+         justify-content: space-around;
+        height: 600px;
+        width: 1420px;
+        background-color: wheat;
+       margin-top: 30px;
+       margin-left: 40px;
+       margin-right: 40px;
+        border-radius: 20px;
+        text-align: justify;
+        box-shadow: black;
+    }
+    #div2>h2{
+        border-bottom: solid black;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+    #div2>p{
+        font-size: 17px;
+       padding-left: 60px;
+       padding-right: 60px;
+    }
+    #div3{
+         justify-content: space-around;
+        height: 1100px;
+        width: 1420px;
+        background-color: wheat;
+       margin-top: 30px;
+       margin-left: 40px;
+       margin-right: 40px;
+        border-radius: 20px;
+        text-align: justify;
+    }
+    #div3>h2{
+        border-bottom: solid black;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+    #div3>img{
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 400px;
+
+    }
+    footer {
+  
+    background: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.nasa-footer {
+    background: #000;
+    color: #fff;
+    padding: 40px 24px;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: space-between;
+}
+.footer-branding {
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 350px;
+}
+.nasa-logo {
+    height: 40px;
+    margin-bottom: 16px;
+}
+.footer-branding h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 12px 0 8px 0;
+}
+.footer-branding p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.about-link, .join-link {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.join-link {
+    display: inline-block;
+    margin: 10px 0 18px 0;
+    color: #ff5252;
+}
+.arrow {
+    color: #ff5252;
+    font-weight: bold;
+}
+.footer-social {
+    display: flex;
+    gap: 16px;
+    margin: 18px 0 14px 0;
+}
+.icon {
+    font-size: 1.6em;
+    background: #222;
+    border-radius: 50%;
+    padding: 8px;
+    color: #fff;
+}
+.footer-sub {
+    font-size: 0.98em;
+    color: #aaa;
+    margin-top: 6px;
+    display: block;
+}
+.footer-links {
+    display: flex;
+    gap: 40px;
+    flex: 2 1 550px;
+    justify-content: space-between;
+    min-width: 400px;
+}
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-bottom: 6px;
+}
+.live {
+    background: #ff5252;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 0.80em;
+    font-weight: bold;
+    margin-left: 8px;
+}
+hr {
+    margin: 32px 0 24px 0;
+    border: none;
+    border-top: 1px solid #333;
+}
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_kVZkcgDwPCwPxmbGUwS9rQ_604PEzvj0g&s"
+                alt="ISRO Logo" height="50" style="border-radius: 30%;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <div id="parent">
+        <div id="back">
+            <h1 style="border-bottom: 1px solid; display: inline-block;">About ISRO-Indian Space and Reasearch
+                Organizations</h1>
+        
+
+        <div id="div1">
+            <button> Profile</button>
+            <button>Organizational Structure</button>
+            <button>Contact us</button>
+        </div>
+    </div>
+  <div id="parent2">
+    <br><br><br>
+    <div id="div2">
+        <br>
+        <h2>About ISRO</h2>
+        <br><br>
+        <p>Indian Space Research Organisation (ISRO) is the space agency of India. The organisation is involved in
+            science, engineering and technology to harvest the benefits of outer space for India and the mankind. ISRO
+            is a major constituent of the Department of Space (DOS), Government of India. The department executes the
+            Indian Space Programme primarily through various Centres or units within ISRO.</p>
+            <br>
+        <p>ISRO was previously the Indian National Committee for Space Research (INCOSPAR), set up by the Government of
+            India in 1962, as envisioned by Dr. VikramA Sarabhai. ISRO was formed on August 15, 1969 and superseded
+            INCOSPAR with an expanded role to harness space technology. DOS was set up and ISRO was brought under DOS in
+            1972.</p>
+            <br>
+        <p>The prime objective of ISRO/DOS is the development and application of space technology for various national
+            needs. To fulfil this objective, ISRO has established major space systemsfor communication, television
+            broadcasting and meteorological services; resources monitoring and management; space-based navigation
+            services. ISRO has developed satellite launch vehicles, PSLV and GSLV, to place the satellites in the
+            required orbits.</p>
+            <br>
+        <p>Alongside its technological advancement, ISRO contributes to science and science education in the country.
+            Various dedicated research centres and autonomous institutions for remote sensing, astronomy and
+            astrophysics, atmospheric sciences and space sciences in general function under the aegis of Department of
+            Space. ISRO's own Lunar and interplanetary missions along with other scientific projects encourage and
+            promote science education, apart from providing valuable data to the scientific community which in turn
+            enriches science.</p>
+            <br>
+        <p>ISRO has its headquarters in Bengaluru. Its activities are spread across various centres and units. Launch
+            Vehicles are built at VikramSarabhai Space Centre (VSSC), Thiruvananthapuram; Satellites are designed and
+            developed at U R Rao Satellite Centre (URSC), Bengalure; Integration and launching of satellites and launch
+            vehicles are carried out from Satish Dhawan Space Centre (SDSC), Sriharikota; Development of liquid stages
+            including cryogenic stage is carried out at Liquid Propulsion Systems Centre (LPSC), Valiamala& Bengaluru;
+            Sensors for Communication and Remote Sensing satellites and application aspects of the space technology are
+            taken up at Space Applications Centre (SAC), Ahmedabad and Remote Sensing satellite data reception
+            processing and dissemination is entrusted to National Remote Sensing Centre (NRSC), Hyderabad.</p>
+            <br>
+        <p>The activities of ISRO are guided by its Chairman, who would also be the secretary of DOS and Chairman of
+            Space commission -the apex body that formulates the policies and overseas the implementation of the Indian
+            Space Programme.</p>
+
+     </div>
+    
+     <div id="div3">
+        <h2>Organizational Structure</h2>
+        <br><br><br><br>
+        <img src="https://www.iadb.in/wp-content/uploads/2024/04/Pic-4.png" alt="">
+     </div>
+        
+     </div><footer class="nasa-footer">
+        <div class="footer-top">
+            <div class="footer-branding">
+                <img src="" alt="ISRO LOGO" class="ISRO-logo">
+                <h2>Indian Space Research Organisation</h2>
+                <p>Isro explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
+                <a href="#" class="about-link">About ISRO's Mission</a><br>
+                <a href="#" class="join-link">Join Us <span class="arrow">→</span></a>
+                <div class="footer-social">
+                
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_kVZkcgDwPCwPxmbGUwS9rQ_604PEzvj0g&s" alt="" height="50"border-radius="30px">
+                
+                    
+                </div>
+                
+            </div>
+            <div class="footer-links">
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">News & Events</a>
+                    <a href="#">Multimedia</a>
+                    <a href="#">Isro+ <span class="live">LIVE</span></a>
+                    <a href="#">Missions</a>
+                </div>
+                <div>
+                    <a href="#">Humans in Space</a>
+                    <a href="#">Earth</a>
+                    <a href="#">The Solar System</a>
+                    <a href="#">The Universe</a>
+                    <a href="#">Science</a>
+                </div>
+                <div>
+                    <a href="#">Aeronautics</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Learning Resources</a>
+                    <a href="#">About ISRO</a>
+                    <a href="#">ISRO en Español</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+       
+    </footer>
+   </div>
+ 
+ 
+
+
+
+
+
+</body>
+
+</html>
