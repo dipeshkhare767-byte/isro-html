@@ -1,0 +1,162 @@
+header {
+  background: #002147;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.search input {
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+}
+.search button {
+  padding: 6px 10px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero {
+  background: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg');
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.btn {
+  background: orange;
+  padding: 12px 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #ff7300;
+}
+footer {
+    margin: 0;
+    background: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.nasa-footer {
+    background: #000;
+    color: #fff;
+    padding: 40px 24px;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: space-between;
+}
+.footer-branding {
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 350px;
+}
+.nasa-logo {
+    height: 40px;
+    margin-bottom: 16px;
+}
+.footer-branding h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 12px 0 8px 0;
+}
+.footer-branding p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.about-link, .join-link {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.join-link {
+    display: inline-block;
+    margin: 10px 0 18px 0;
+    color: #ff5252;
+}
+.arrow {
+    color: #ff5252;
+    font-weight: bold;
+}
+.footer-social {
+    display: flex;
+    gap: 16px;
+    margin: 18px 0 14px 0;
+}
+.icon {
+    font-size: 1.6em;
+    background: #222;
+    border-radius: 50%;
+    padding: 8px;
+    color: #fff;
+}
+.footer-sub {
+    font-size: 0.98em;
+    color: #aaa;
+    margin-top: 6px;
+    display: block;
+}
+.footer-links {
+    display: flex;
+    gap: 40px;
+    flex: 2 1 550px;
+    justify-content: space-between;
+    min-width: 400px;
+}
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-bottom: 6px;
+}
+.live {
+    background: #ff5252;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 0.80em;
+    font-weight: bold;
+    margin-left: 8px;
+}
+hr {
+    margin: 32px 0 24px 0;
+    border: none;
+    border-top: 1px solid #333;
+}
+
+
